@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ivan 的個人英文學習筆記">
+<title>Ivan's English Notes</title>
+<style>
+:root{--ink:#17332e;--paper:#f5f4ed;--card:#fffef9;--green:#1f6b58;--lime:#dce999;--muted:#687771;--line:#daddd4}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.7 system-ui,-apple-system,"Noto Sans TC",sans-serif}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}
+header{color:#fff;background:linear-gradient(135deg,#142f2a,#286252);overflow:hidden}.nav{display:flex;justify-content:space-between;padding:22px 0;border-bottom:1px solid #ffffff26}.brand{font-weight:800;letter-spacing:.08em}.brand b{color:var(--lime)}.nav small{opacity:.7}
+.hero{padding:60px 0 72px}.eyebrow{color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.22em}h1{max-width:780px;margin:8px 0 16px;font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;letter-spacing:-.04em}h1 em{color:var(--lime)}.intro{max-width:650px;color:#ffffffbf}
+.search{display:flex;align-items:center;max-width:640px;margin-top:30px;padding:12px 16px;background:#fff;border-radius:8px;box-shadow:0 15px 35px #0d262044}.search span{color:var(--green);font-size:1.5rem}.search input{flex:1;min-width:0;padding:0 12px;color:var(--ink);background:none;border:0;outline:0;font:inherit}
+main{padding:42px 0 80px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.filters{display:flex;flex-wrap:wrap;gap:8px}.filter{padding:8px 14px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;font-weight:700;cursor:pointer}.filter.active,.filter:hover{color:#fff;background:var(--green);border-color:var(--green)}#count{color:var(--muted);font-size:.85rem}
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{padding:27px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 3px 0 #17332e0a;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 14px 35px #17332e14}.top{display:flex;justify-content:space-between}.tag{padding:3px 9px;border-radius:3px;font-size:.7rem;font-weight:800}.grammar{color:#285d50;background:#dfece2}.vocabulary{color:#78502d;background:#f2dfc3}.expression{color:#405d79;background:#dfe8f0}time{color:#8a9692;font-size:.72rem}
+h2{margin:18px 0 4px;font-family:Georgia,serif;font-size:1.9rem;line-height:1.2}.question,.pronounce{margin:0 0 17px;color:var(--muted)}.answer{padding:17px 19px;background:#f0f2e9;border-left:3px solid var(--green);border-radius:0 6px 6px 0}.answer p{margin:6px 0}.label{font-size:.76rem;font-weight:800;letter-spacing:.08em}.example{font-weight:650}mark{color:inherit;background:linear-gradient(transparent 55%,var(--lime) 55%)}code{padding:1px 5px;color:#285749;background:#e2eae3;border-radius:3px}
+details{margin-top:17px;padding-top:13px;color:var(--muted);border-top:1px dashed var(--line)}summary{color:var(--green);font-size:.86rem;font-weight:700;cursor:pointer}.wrong{color:#a65344}.empty{text-align:center;padding:60px;color:var(--muted)}
+footer{padding:22px 0;color:#ffffffaa;background:var(--ink);font-size:.78rem}footer .wrap{display:flex;justify-content:space-between}[hidden]{display:none!important}
+@media(max-width:700px){.nav small{display:none}.hero{padding:44px 0 55px}.toolbar{align-items:flex-start;flex-direction:column}.notes{grid-template-columns:1fr}.card{padding:22px}footer .wrap{display:block}}
+</style>
+</head>
+<body>
+<header><div class="nav wrap"><div class="brand"><a href="../" style="color:inherit;text-decoration:none">← 數位工具箱</a> · EN<b>／</b>筆記</div><small>持續更新的個人英文知識庫</small></div>
+<div class="hero wrap"><div class="eyebrow">IVAN'S ENGLISH NOTES</div><h1>把每一次提問，<br><em>變成真正記得的英文。</em></h1>
+<p class="intro">收錄我實際遇到的單字、文法與表達方式，搭配中文解釋、自然例句和容易犯的錯誤。</p>
+<div class="search"><span>⌕</span><input id="search" type="search" placeholder="搜尋單字、句型或中文說明…" aria-label="搜尋筆記"></div></div></header>
+<main class="wrap"><section class="toolbar"><div class="filters">
+<button class="filter active" data-filter="all">全部 4</button><button class="filter" data-filter="vocabulary">單字 1</button><button class="filter" data-filter="grammar">文法 1</button><button class="filter" data-filter="expression">常用表達 2</button>
+</div><span id="count">顯示 4 則筆記</span></section>
+<section class="notes">
+
+<article class="card" data-cat="expression" data-key="i had time on my hands 有時間 空閒 有空">
+<div class="top"><span class="tag expression">常用表達 Expression</span><time>2026.09.14</time></div><h2>have time on one's hands</h2><p class="question">I had time on my hands 是什麼意思？</p>
+<div class="answer"><p class="label">中文意思</p><p>表示「有空閒時間」，通常暗示暫時沒有事情需要處理。</p><p class="example">I had some time on my hands, so I started learning English.</p></div>
+<details><summary>語感補充</summary><p>比單純的 <code>I had time</code> 更強調手邊正好多出一段空閒。</p></details></article>
+<article class="card" data-cat="vocabulary" data-key="pandemic 全球大流行 epidemic 流行病">
+<div class="top"><span class="tag vocabulary">單字 Vocabulary</span><time>2026.09.14</time></div><h2>pandemic</h2><p class="pronounce">/pænˈdem.ɪk/ · noun / adjective</p>
+<div class="answer"><p class="label">中文意思</p><p>（疾病的）全球大流行；也可作形容詞。</p><p class="example">The pandemic changed the way many people work.</p></div>
+<details><summary>易混淆字</summary><p><code>epidemic</code> 通常指特定地區內的流行；<code>pandemic</code> 則跨越多個國家或洲。</p></details></article>
+
+<article class="card" data-cat="expression" data-key="take advantage of 人 機會 情況 利用 善用 exploit benefit from">
+<div class="top"><span class="tag expression">常用表達 Expression</span><time>2026.09.29</time></div><h2>take advantage of + 人／機會／情況</h2><p class="question">如何正確使用 take advantage of？</p>
+<div class="answer"><p class="label">核心意思</p><p><code>take advantage of + 機會／情況</code>：善用、把握，通常是正面或中性。</p><p><code>take advantage of + 人</code>：利用、占某人便宜，通常帶負面意思。</p><p class="example">We should take advantage of this opportunity to expand our business.</p><p class="example">He took advantage of her kindness.</p></div>
+<details><summary>更多例句與常見錯誤</summary><ul><li>Let's take advantage of the good weather and go hiking.</li><li>The company took advantage of new technology to reduce costs.</li><li>Don't let anyone take advantage of you.</li></ul><p><span class="wrong">錯：</span>take advantage from an opportunity<br><span class="label">對：</span>take advantage <mark>of</mark> an opportunity</p><p>注意：這裡的 <code>advantage</code> 前面通常不加 <code>an</code>。</p></details></article>
+
+<article class="card" data-cat="grammar" data-key="how exactly is climate change affecting extreme weather 現在進行式 疑問句 exactly 氣候變遷 極端天氣">
+<div class="top"><span class="tag grammar">文法 Grammar</span><time>2026.09.14</time></div><h2>How exactly is X affecting Y?</h2><p class="question">How exactly is climate change affecting extreme weather?</p>
+<div class="answer"><p class="label">句型結構</p><p><code>How exactly + be + 主詞 + V-ing + 受詞?</code></p><p>詢問某件事「具體究竟如何」正在影響另一件事。<code>exactly</code> 加強 <code>how</code>，要求更精確的說明。</p><p class="example">How exactly is climate change affecting extreme weather?</p></div>
+<details><summary>更多例句</summary><ul><li>How exactly is AI changing the way we work?</li><li>How exactly is the new policy affecting small businesses?</li><li>How exactly are higher interest rates affecting home buyers?</li></ul></details></article>
+</section><div class="empty" hidden>沒有找到符合的筆記。</div></main>
+<footer><div class="wrap"><span>Small questions, lasting progress.</span><span>© 2026 Ivan's English Notes</span></div></footer>
+<script>
+const q=document.querySelector('#search'),cards=[...document.querySelectorAll('.card')],btns=[...document.querySelectorAll('.filter')],count=document.querySelector('#count'),empty=document.querySelector('.empty');let cat='all';
+function update(){let n=0,s=q.value.trim().toLowerCase();cards.forEach(c=>{let show=(cat==='all'||c.dataset.cat===cat)&&(!s||(c.dataset.key+' '+c.textContent).toLowerCase().includes(s));c.hidden=!show;if(show)n++});count.textContent='顯示 '+n+' 則筆記';empty.hidden=n!==0}
+q.addEventListener('input',update);btns.forEach(b=>b.onclick=()=>{btns.forEach(x=>x.classList.remove('active'));b.classList.add('active');cat=b.dataset.filter;update()});document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement!==q){e.preventDefault();q.focus()}});
+</script></body></html>
